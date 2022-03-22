@@ -15,7 +15,7 @@ def boot_django():
             }
         },
         INSTALLED_APPS=(
-            "django-fakejira",
+            "fakejira",
         ),
         TIME_ZONE="UTC",
         USE_TZ=True,
