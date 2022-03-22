@@ -12,7 +12,7 @@ This app can be installed and used in your django project by:
 
 .. code-block:: bash
 
-    $ pip install django-fakejira
+    $ pip install django-fakejira-testing
 
 
 Edit your `settings.py` file to include `'fakejira'` in the `INSTALLED_APPS`
