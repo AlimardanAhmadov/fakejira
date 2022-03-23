@@ -12,12 +12,12 @@ from .forms import AddShippingForm, LoginForm
 from .models import Shipping
 
 
-@login_required
+@login_required(login_url='/login/')
 def main(request):
     return render(request, 'base.html')
 
 
-@login_required
+@login_required(login_url='/login/')
 def manage_users(request, q=None):
     page = request.GET.get('page', 10)
     users = User.objects.all().order_by('-id')
@@ -68,7 +68,7 @@ def manage_users(request, q=None):
     return render(request, 'manage_users.html', context)
 
 
-@login_required
+@login_required(login_url='/login/')
 def shippings(request, q=None):
     page = request.GET.get('page', 1)
     shippings = Shipping.objects.all()
@@ -120,7 +120,7 @@ def shippings(request, q=None):
     return render(request, 'shippings.html', context)
 
 
-@login_required
+@login_required(login_url='/login/')
 def view_shipping(request, pk):
     try:
         selected_shipping=get_object_or_404(Shipping, id=pk)
@@ -134,12 +134,12 @@ def view_shipping(request, pk):
     return render(request, 'selected_shipping.html', context)
 
 
-@login_required
+@login_required(login_url='/login/')
 def create_shipping(request):
     return render(request, 'shipping_create.html')
 
 
-@login_required
+@login_required(login_url='/login/')
 def add_new_shipping(request):
     with transaction.atomic():
         try:
@@ -176,7 +176,7 @@ def add_new_shipping(request):
     return JsonResponse({"success": True,"message": "Shipping has been successfully created"})
 
 
-@login_required
+@login_required(login_url='/login/')
 def update_shipping(request, pk):
     with transaction.atomic():
         try:
@@ -212,7 +212,7 @@ def update_shipping(request, pk):
     return JsonResponse({"success": True,"message": "Shipping has been successfully updated"})
 
 
-@login_required
+@login_required(login_url='/login/')
 def delete_shipping(request, pk):
     with transaction.atomic():
         try:
@@ -231,7 +231,7 @@ def delete_shipping(request, pk):
     return JsonResponse({"success": True,"message": "Shipping has been successfully deleted"})
 
 
-@login_required
+@login_required(login_url='/login/')
 def bulk_delete_shippings(request): 
     if request.method == 'POST':
         with transaction.atomic():

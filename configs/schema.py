@@ -1,4 +1,4 @@
-from fakejira import schema
+from fakejira1 import schema
 import graphene
 
 from graphene_django.debug import DjangoDebug

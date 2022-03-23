@@ -25,20 +25,8 @@ import debug_toolbar, os
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('fakejira.urls')),
+    path('', include('fakejira1.urls')),
     path("graphql", csrf_exempt(GraphQLView.as_view(graphiql=True))),
-
-    #Vue.js folders
-    #url(r'^media/(?P<path>.*)$', serve,
-    #    {'document_root': os.path.join(settings.VUE_ROOT, 'media')}),
-    #url(r'^img/(?P<path>.*)$', serve,
-    #    {'document_root': os.path.join(settings.VUE_ROOT, 'img')}),
-    #url(r'^js/(?P<path>.*)$', serve,
-    #    {'document_root': os.path.join(settings.VUE_ROOT, 'js')}),
-    #url(r'^css/(?P<path>.*)$', serve,
-    #    {'document_root': os.path.join(settings.VUE_ROOT, 'css')}),
-    #url(r'^fonts/(?P<path>.*)$', serve,
-    #    {'document_root': os.path.join(settings.VUE_ROOT, 'fonts')}),
 ]
 
 

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from fakejira import models
+from . import models
 
 
 class ShippingAdmin(admin.ModelAdmin):

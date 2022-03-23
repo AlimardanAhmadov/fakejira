@@ -12,7 +12,7 @@ urlpatterns = [
     path('update_shipping/<str:pk>/', views.update_shipping, name='update_shipping'),
     path('delete_shipping/<str:pk>/', views.delete_shipping, name='delete_shipping'),
     path('bulk_delete_shippings/', views.bulk_delete_shippings, name='bulk_delete_shippings'),
-    path('login/', views.login_view, name='login_view'),
+    path('fakejira-login/', views.login_view, name='login_view'),
     path('singin/', views.login, name='login'),
     path('logout_view/', views.logout_view, name='logout_view'),
 ]

@@ -5,4 +5,4 @@ from boot_django import boot_django
 # call the django setup routine
 boot_django()
 
-call_command("makemigrations", "receipts")
+call_command("makemigrations", "fakejira1")

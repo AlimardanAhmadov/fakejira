@@ -2,7 +2,7 @@ import os
 import django
 from django.conf import settings
 
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "fakejira"))
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "fakejira1"))
 
 def boot_django():
     settings.configure(
@@ -15,7 +15,7 @@ def boot_django():
             }
         },
         INSTALLED_APPS=(
-            "django-fakejira",
+            "fakejira1",
         ),
         TIME_ZONE="UTC",
         USE_TZ=True,
