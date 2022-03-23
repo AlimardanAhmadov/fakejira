@@ -12,7 +12,7 @@ This app can be installed and used in your django project by:
 
 .. code-block:: bash
 
-    $ pip install django-fakejira
+    $ pip install django-fakejira-testing125
 
 
 Edit your `settings.py` file to include `'fakejira'` in the `INSTALLED_APPS`
@@ -23,7 +23,7 @@ listing.
     INSTALLED_APPS = [
         ...
 
-        'fakejira',
+        'fakejira1',
     ]
 
 
@@ -35,7 +35,7 @@ Edit your project `urls.py` file to import the URLs:
     url_patterns = [
         ...
 
-        path('fakejira/', include('fakejira.urls')),
+        path('/', include('fakejira1.urls')),
     ]
 
 
@@ -44,5 +44,5 @@ Finally, add the models to your database:
 
 .. code-block:: bash
 
-    $ ./manage.py makemigrations fakejira
+    $ ./manage.py migrate fakejira1
 
