@@ -15,11 +15,7 @@ def boot_django():
             }
         },
         INSTALLED_APPS=(
-<<<<<<< HEAD
             "fakejira1",
-=======
-            "fakejira",
->>>>>>> f909855b1e98a4b76e048fb236680d75f969f2a3
         ),
         TIME_ZONE="UTC",
         USE_TZ=True,
