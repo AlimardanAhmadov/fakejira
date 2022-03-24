@@ -1,5 +1,5 @@
-fakejira-testing-app
-====================
+django-fakejira-testing-app-1
+=============================
 
 This is sample code used in the Real Python article [Writing an Installable Django App](???). The article describes how to take an app from an existing Django project and make it a stand-alone installable package avilable on PyPI.
 
@@ -12,7 +12,7 @@ This app can be installed and used in your django project by:
 
 .. code-block:: bash
 
-    $ pip install fakejira-testing-app
+    $ pip install django-fakejira-testing-app-1
 
 
 Edit your `settings.py` file to include `'fakejira1'` in the `INSTALLED_APPS`
