@@ -1,7 +1,7 @@
 django-fakejira-testing-app-1
 =============================
 
-This is sample code used in the Real Python article [Writing an Installable Django App](???). The article describes how to take an app from an existing Django project and make it a stand-alone installable package avilable on PyPI.
+This is a installable Django App that allows users to add e-commerce products and view their statuses on a workflow chart. It's also available on PyPI.
 
 Installable App
 ---------------
