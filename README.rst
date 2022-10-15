@@ -6,8 +6,6 @@ This is sample code used in the Real Python article [Writing an Installable Djan
 Installable App
 ---------------
 
-This app models a list of items on a receipt. Each item has a description and a cost. A receipt may reference multiple items.
-
 This app can be installed and used in your django project by:
 
 .. code-block:: bash
