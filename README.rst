@@ -1,7 +1,7 @@
 django-fakejira test python library
 ===================================
 
-This is sample code used in the Real Python article [Writing an Installable Django App](???). The article describes how to take an app from an existing Django project and make it a stand-alone installable package avilable on PyPI.
+This is sample code used in the Real Python article [Writing an Installable Django App](???). The article describes how to take an app from an existing Django project and make it a stand-alone installable package available on PyPI.
 
 Installable App
 ---------------
